@@ -19,7 +19,7 @@ st.set_page_config(
 def load_model():
     try:
         # โหลดไฟล์โมเดลที่เซฟมาจาก Jupyter Notebook
-        model = joblib.load('/content/drive/MyDrive/SEA614-ML/lgb_model.pkl')
+        model = joblib.load('lgb_model.pkl')
         return model
     except FileNotFoundError:
         st.error("❌ ไม่พบไฟล์ 'lgb_model.pkl' กรุณาตรวจสอบให้แน่ใจว่าได้อัปโหลดไฟล์โมเดลแล้ว")
